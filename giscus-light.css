@@ -1,0 +1,61 @@
+/* Giscus theme matching the site's light palette (_sass/_themes.scss). */
+@import url("https://giscus.app/themes/light.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+main {
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: rgba(181, 9, 172, 0.05);
+  --color-fg-default: #000000;
+  --color-fg-muted: #828282;
+  --color-border-default: #b509ac; /* frame: site hover color */
+  --color-border-muted: rgba(0, 0, 0, 0.1);
+  --color-accent-muted: #b509ac;
+  --color-accent-fg: #b509ac;
+  --color-accent-emphasis: #b509ac;
+  --color-btn-primary-bg: #b509ac;
+  --color-btn-primary-hover-bg: #8f0788;
+  --color-btn-primary-text: #ffffff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Shorter comment box; font size unchanged. */
+.gsc-comment-box-textarea {
+  min-height: 60px !important;
+  height: 60px;
+}
+
+/* Pagination buttons have no themable border color. */
+.gsc-pagination-button {
+  border-color: #b509ac;
+}
+
+/* Write box: faint grey border, thin accent border on focus (no ring). */
+.gsc-comment-box,
+.gsc-comment-box-textarea,
+.gsc-comment-box-textarea-extras {
+  border-color: #d9d9d9;
+}
+
+.gsc-comment-box:focus-within,
+.gsc-comment-box-textarea:focus {
+  border-color: #b509ac;
+}
+
+.gsc-comment-box-write:focus-within {
+  border-color: #b509ac;
+  box-shadow: none;
+}
+
+/* Reaction pills inside posted comments: faint border (the post-level reactions keep the accent). */
+.gsc-comment .gsc-social-reaction-summary-item,
+.gsc-comment .gsc-social-reaction-summary-item.has-reacted {
+  border-color: #d9d9d9;
+}
+
+/* Smiley (add reaction) button inside posted comments. */
+.gsc-comment .gsc-reactions-button {
+  border-color: #d9d9d9;
+}
